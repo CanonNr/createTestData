@@ -19,7 +19,6 @@ if($data_type == 'd'){
 }
 
 
-
 function db_config(){
 
 	echo "请输入数据库地址 [default:localhost]> ";
@@ -34,9 +33,9 @@ function db_config(){
 	$config['db_user'] = trim(fgets(STDIN));
 	$config['db_user'] = empty($config['db_user']) ? "root" : $config['db_user'];
 
-	echo "请输入数据库密码 [default:123123]> ";
+	echo "请输入数据库密码 [default:root]> ";
 	$config['db_pass'] = trim(fgets(STDIN));
-	$config['db_pass'] = empty($config['db_pass']) ? "123123" : $config['db_pass'];
+	$config['db_pass'] = empty($config['db_pass']) ? "root" : $config['db_pass'];
 
 	echo "请输入数据库名称 [default:test]> ";
 	$config['db_name'] = trim(fgets(STDIN));

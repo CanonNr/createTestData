@@ -5,13 +5,6 @@ Class testData{
 	public $result;
 	public function __construct($data_num)
 	{
-		// $this->createRealname(); 	//随机姓名
-		// $this->createUsername(); 	//用户名
-		// $this->createEmail();		//邮箱
-		// $this->createToken();		//token
-		// $this->createPassword();	//密码
-		// $this->createSex();			//男女
-		// $this->createBirthday();	//生日
 		$this->result.="INSERT INTO `s_users` (`username`, `email`, `password`, `remember_token`, `realname`, `sex`, `birthday`) VALUES ('{$this->createUsername()}','{$this->createEmail()}','{$this->createPassword()}', '{$this->createToken()}','{$this->createRealname()}', '{$this->createSex()}', '{$this->createBirthday()}');";
 	}
 
@@ -54,5 +47,3 @@ Class testData{
 		 	return $result;
 	}
 }
-
-new testData(100);
