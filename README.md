@@ -20,4 +20,4 @@ php action.php
 
 ## Screenshots
 
-![](./img.png)
+![](./screenshots.png)
